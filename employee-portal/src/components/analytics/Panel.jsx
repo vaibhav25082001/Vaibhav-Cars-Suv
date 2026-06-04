@@ -1,0 +1,1 @@
+import Card from "../ui/Card";export default function Panel({title="analytics",children}){return <Card title={title}>{children||<p className="text-sm text-white/60">Live VAIBHAV analytics module connected to backend APIs.</p>}</Card>}

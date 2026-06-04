@@ -1,0 +1,1 @@
+export default function useExport(){return {toCsv(name,rows=[]){const csv=rows.map(r=>Object.values(r).join(",")).join("\n");const blob=new Blob([csv],{type:"text/csv"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=name;a.click();}}}
