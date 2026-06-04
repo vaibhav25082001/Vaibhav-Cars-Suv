@@ -1,0 +1,1 @@
+import Card from "../ui/Card";export default function Panel({title="tickets",children}){return <Card title={title}>{children||<p className="text-sm text-white/60">Live VAIBHAV tickets module connected to backend APIs.</p>}</Card>}

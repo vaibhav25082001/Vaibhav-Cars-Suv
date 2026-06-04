@@ -1,0 +1,1 @@
+import useAuth from "./useAuth";export default function useRole(){const {user}=useAuth();return {role:user?.role, isManager:["ShowroomManager","Admin","SupportSupervisor"].includes(user?.role), isAdmin:user?.role==="Admin"};}
