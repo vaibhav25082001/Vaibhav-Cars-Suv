@@ -1,0 +1,1 @@
+export const colors={black:"#0A0A0A",gold:"#C9A84C",white:"#F5F5F5",card:"#151515",muted:"#A3A3A3"};

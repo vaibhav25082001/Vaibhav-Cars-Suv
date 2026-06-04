@@ -1,0 +1,1 @@
+import axios from "axios";export const API_URL=process.env.EXPO_PUBLIC_API_URL||"http://localhost:5000/api";const api=axios.create({baseURL:API_URL,timeout:20000});let token=null;export function setToken(t){token=t}api.interceptors.request.use(c=>{if(token)c.headers.Authorization=`Bearer ${token}`;return c});export default api;

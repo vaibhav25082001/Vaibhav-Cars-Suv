@@ -1,0 +1,1 @@
+import { useEffect,useState } from "react";import api from "../services/api";export default function useApi(url){const [data,setData]=useState([]),[loading,setLoading]=useState(Boolean(url));useEffect(()=>{if(!url)return;api.get(url).then(r=>setData(r.data?.data||r.data)).finally(()=>setLoading(false))},[url]);return{data,loading,setData}}

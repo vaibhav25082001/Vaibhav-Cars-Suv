@@ -1,0 +1,1 @@
+export function generateCarImagePrompt(carName,color="Black",angle="front three-quarter"){return `Premium studio render of ${color} ${carName}, ${angle} angle, glossy paint, black background, gold rim light, luxury SUV dealership aesthetic, realistic automotive photography`;}

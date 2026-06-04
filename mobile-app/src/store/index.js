@@ -1,0 +1,1 @@
+import { configureStore } from "@reduxjs/toolkit";import auth from "./slices/authSlice";import cars from "./slices/carsSlice";import wishlist from "./slices/wishlistSlice";import notifications from "./slices/notificationsSlice";export const store=configureStore({reducer:{auth,cars,wishlist,notifications}});

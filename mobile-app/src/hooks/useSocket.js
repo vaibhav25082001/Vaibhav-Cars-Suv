@@ -1,0 +1,1 @@
+import { useEffect } from "react";import { useSelector } from "react-redux";import { createSocket } from "../services/socket";export default function useSocket(events={}){const token=useSelector(s=>s.auth.token);useEffect(()=>{if(!token)return;const socket=createSocket(token);Object.entries(events).forEach(([e,h])=>socket.on(e,h));return()=>socket.disconnect()},[token])}

@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "VAIBHAV Cars",
+    "slug": "vaibhav-cars",
+    "version": "1.0.0",
+    "sdkVersion": "51.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark"
+  }
+}
