@@ -1,0 +1,1 @@
+import BookingForm from "../components/bookings/BookingForm";export default function TestDrive(){return <BookingForm type="test-drive"/>}
