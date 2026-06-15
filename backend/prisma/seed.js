@@ -1,9 +1,9 @@
 const { PrismaClient } = require("@prisma/client");
+const bcrypt = require("bcrypt");
 
 const prisma = new PrismaClient();
 
-const passwordHash =
-  "$2a$10$demoSeedPasswordHashForLocalDevelopmentOnlyDoNotUseInProduction";
+const passwordHash = bcrypt.hashSync("password", 10);
 
 const day = 24 * 60 * 60 * 1000;
 const now = new Date();
